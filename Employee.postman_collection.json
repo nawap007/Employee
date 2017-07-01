@@ -1,0 +1,104 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Employee",
+		"_postman_id": "c9fedaa7-8b45-c095-3d06-c0a0ee8a8503",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "save employee",
+			"request": {
+				"url": "http://localhost:8080/pawan/employee/saveEmp",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\"firstName\":\"pawan\",\n\"lastName\":\"mandhan\",\n\"age\":\"26\",\n\"mobileNumber\":\"9211111875\"\n\t\n\t\n\t\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "count employee",
+			"request": {
+				"url": "http://localhost:8080/pawan/employee/count",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get employee by id",
+			"request": {
+				"url": "http://localhost:8080/pawan/employee/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "fetch All Employee Paging",
+			"request": {
+				"url": "http://localhost:8080/pawan/employee/fetchAll/0",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update employee",
+			"request": {
+				"url": "http://localhost:8080/pawan/employee/updateEmp",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"employeeId\": 1,\n            \"firstName\": \"pawan\",\n            \"lastName\": \"mandhan\",\n            \"mobileNumber\": \"9211111875\",\n            \"employeeCode\": \"10001\",\n            \"createdOn\": 1498804117000,\n            \"age\": 29\n        }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete employee by id",
+			"request": {
+				"url": "http://localhost:8080/pawan/employee/remove/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n            \"employeeId\": 1,\n            \"firstName\": \"pawan\",\n            \"lastName\": \"mandhan\",\n            \"mobileNumber\": \"9211111875\",\n            \"employeeCode\": \"10001\",\n            \"createdOn\": 1498804117000,\n            \"age\": 29\n        }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
