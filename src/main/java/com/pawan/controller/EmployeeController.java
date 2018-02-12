@@ -15,7 +15,7 @@ import com.pawan.utility.ResponseWrapper;
 
 @RestController
 @RequestMapping("employee")
-public class EmployeeController {//Development changes 
+public class EmployeeController {//master commit
 
 	@Autowired
 	private EmployeeService employeeService;
